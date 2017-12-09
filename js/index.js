@@ -16,7 +16,7 @@ $(document).ready(function(){
 
 $(window).resize(function() {
 
-  if ($(window).width() < 320) {
+  if ($(window).width() < 480) {
     $("body").css("background-size", "auto");
   }else{$("body").css("background-size", "cover");}
 
