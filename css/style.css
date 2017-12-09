@@ -1,0 +1,143 @@
+
+body{
+  background-image: url("blank-page.jpg");
+  background-size: cover;
+}
+#page {
+  text-align: center;
+  font-family: 'comic sans', cursive;
+  font-size: 16px;
+
+}
+h1{
+   margin-top:40px;
+}
+#board {
+  margin: auto;
+  margin-top: 60px;
+  max-width: 300px;
+  min-width: 300px;
+  min-height: 140px;
+  padding-bottom: 6px;
+  border-width: 6px;
+  border-radius: 10px;
+  border-style: double;
+  border-color: black;
+  background-image:url("blank-page.jpg");
+  text-align: center;
+}
+#player-number{
+  margin-top: 8%;
+}
+.player-number-btn,.sign-btn,.difficulty-btn{
+
+  color:#3b80ef;
+  margin-bottom: 6px;
+  background: none;
+  border: none;
+}
+.player-number-btn:hover,.difficulty-btn:hover{
+  font-size: 18px;
+}
+
+.sign-btn{
+  font-size: 26px;
+}
+.sign-btn:hover{
+  border-width: 2px;
+  border-radius: 90%;
+  border-color: black;
+  border-style: inset;
+}
+
+
+/*
+#score {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+*/
+
+#playing-field {
+
+  margin: 20%;
+
+
+
+}
+
+
+.play-btn {
+
+  border-color: rgba(128,128,128,1.0);
+  border-width: 2px;
+  background: none;
+  color: grey;
+  font-size: 32px;
+  width: 60px;
+  height:60px;
+  padding:0px;
+  cursor: url(pencil.cur),auto;
+
+}
+.play-btn:focus,.play-btn:active,.play-btn:hover{
+
+  border-color: rgba(128,128,128,1.0) !important;
+  border-width: 2px;
+  outline:none !important;
+
+  padding:0px;
+  background: none;
+
+}
+.play-btn:active{
+
+  transform: translateY(0px);
+  tr
+}
+
+#btn1, #btn2, #btn3 {
+  border-top: 0px;
+}
+
+#btn7, #btn8, #btn9 {
+  border-bottom: 0px;
+}
+
+#btn1, #btn4, #btn7 {
+  border-left: 0px;
+}
+
+#btn3, #btn6, #btn9 {
+  border-right: 0px;
+}
+
+
+#reset-all {
+  border:none;
+  background: none;
+  color: #2981e5;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+#reset-all:hover{
+  font-size: 20px;
+}
+#result{
+  padding-top: 60px;
+  position:absolute;
+  background-image: url('blank-page.jpg');
+  opacity: 0.8;
+  height:180px;
+  width:180px;
+  font-size: 32px;
+}
+#turn1,#turn2{
+
+  position:absolute;
+  background-image: url('blank-page.jpg');
+  writing-mode: vertical-rl;
+  text-orientation:upright;
+}

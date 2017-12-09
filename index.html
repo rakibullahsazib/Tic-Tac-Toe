@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe 2player</title>
+
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+  <div class="container-fluid" id="page">
+    <h1>Tic Tac Toe</h1>
+    <div class="well" id="board">
+
+      <div id="player-number">
+        <div>
+          <button class="player-number-btn" id="one-player">1 player</button>
+        </div>
+        <div>
+          <button class="player-number-btn" id="two-player">2 player</button>
+        </div>
+      </div>
+
+      <div id="sign-choice" hidden>
+        <p id="sign-text">Sign of player 1</p>
+
+        <button class="sign-btn" id="round">o</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="sign-btn" id="cross">x</button>
+      </div>
+
+      <div id="difficulty" hidden>
+        <div>
+          <button class="difficulty-btn" id="baby">baby</button>
+        </div>
+        <div>
+          <button class="difficulty-btn" id="matured">Matured</button>
+        </div>
+        <div>
+          <button class="difficulty-btn" id="master">MASTER</button>
+        </div>
+      </div>
+
+      <div id="score" hidden>
+        <span id="player1-name"></span> :
+        <span id="player1-score"></span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span id="player2-name"></span> :
+        <span id="player2-score"></span>
+      </div>
+
+      <div id="playing-field" hidden>
+        <div class="row">
+          <button class="play-btn" id="btn1"></button>
+          <button class="play-btn" id="btn2"></button>
+          <button class="play-btn" id="btn3"></button>
+        </div>
+
+        <div class="row">
+          <button class="play-btn" id="btn4"></button>
+          <button class="play-btn" id="btn5"></button>
+          <button class="play-btn" id="btn6"></button>
+        </div>
+
+        <div class="row">
+          <button class="play-btn " id="btn7"></button>
+          <button class="play-btn" id="btn8"></button>
+          <button class="play-btn" id="btn9"></button>
+        </div>
+      </div>
+
+      <button id="reset-all" hidden>Reset All</button>
+    </div>
+
+    <div id="turn1" hidden></div>
+    <div id="turn2" hidden></div>
+    <div id="result" hidden></div>
+
+  </div>
+
+<audio id="cross-audio" src="simonSound1.mp3"></audio>
+<audio id="round-audio" src="simonSound2.mp3"></audio>
+<audio id="win-audio" src="cheer2.mp3"></audio>
+<audio id="lose-audio" src="yawn.mp3"></audio>
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
