@@ -2,49 +2,42 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Tic Tac Toe 2player</title>
+  <title>Tic Tac Toe</title>
+  <meta name="description" content="Tic Tac Toe">
+  <meta name="keywords" content="Tic Tac Toe Web Game">
+  <meta name="author" content="Rakibullah Sazib">
 
-
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-
-      <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Indie+Flower" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 
 
 </head>
 
 <body>
-  <div class="container-fluid" id="page">
-   <h1>Tic Tac Toe</h1>
-    <div class="well" id="board">
+  <img id ="background-img" src="css/blank-page.jpg"> 
+  <div id="page">
+    
+    <h1>Tic Tac Toe</h1>
+    <div id="board">
 
-      <div id="player-number">
-        <div>
-          <button class="player-number-btn" id="one-player">1 player</button>
-        </div>
-        <div>
-          <button class="player-number-btn" id="two-player">2 player</button>
-        </div>
+      <div id="player-number"> 
+        <div class="player-number-btn" id="one-player">1 player</div>
+      
+        <div class="player-number-btn" id="two-player">2 player</div> 
       </div>
 
       <div id="sign-choice" hidden>
         <p id="sign-text">Sign of player 1</p>
 
-        <button class="sign-btn" id="round">o</button>
+        <div class="sign-btn" id="round">o</div>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button class="sign-btn" id="cross">x</button>
+        <div class="sign-btn" id="cross">x</div>
       </div>
 
       <div id="difficulty" hidden>
-        <div>
-          <button class="difficulty-btn" id="baby">baby</button>
-        </div>
-        <div>
-          <button class="difficulty-btn" id="matured">Matured</button>
-        </div>
-        <div>
-          <button class="difficulty-btn" id="master">MASTER</button>
-        </div>
+        <div class="difficulty-btn" id="baby">baby</div>
+        <div class="difficulty-btn" id="matured">Matured</div>
+        <div class="difficulty-btn" id="master">MASTER</div>
       </div>
 
       <div id="score" hidden>
@@ -57,30 +50,32 @@
 
       <div id="playing-field" hidden>
         <div class="row">
-          <button class="play-btn" id="btn1"></button>
-          <button class="play-btn" id="btn2"></button>
-          <button class="play-btn" id="btn3"></button>
+          <div class="play-btn" id="btn1">1</div>
+          <div class="play-btn" id="btn2">2</div>
+          <div class="play-btn" id="btn3">3</div>
         </div>
 
         <div class="row">
-          <button class="play-btn" id="btn4"></button>
-          <button class="play-btn" id="btn5"></button>
-          <button class="play-btn" id="btn6"></button>
+          <div class="play-btn" id="btn4">4</div>
+          <div class="play-btn" id="btn5">5</div>
+          <div class="play-btn" id="btn6">6</div>
         </div>
 
         <div class="row">
-          <button class="play-btn " id="btn7"></button>
-          <button class="play-btn" id="btn8"></button>
-          <button class="play-btn" id="btn9"></button>
+          <div class="play-btn" id="btn7">7</div>
+          <div class="play-btn" id="btn8">8</div>
+          <div class="play-btn" id="btn9">9</div>
         </div>
+
+        <div id="turn1" hidden></div>
+        <div id="turn2" hidden></div>
+        <div id="result" >Player 1 Wins!</div>
       </div>
 
-      <button id="reset-all" hidden>Reset All</button>
+      <div id="reset-all" hidden>Reset All</div>
     </div>
 
-    <div id="turn1" hidden></div>
-    <div id="turn2" hidden></div>
-    <div id="result" hidden></div>
+    
 
   </div>
 
