@@ -11,7 +11,6 @@ body{
   position: relative;
   width: 100%;
   text-align: center;
-  font-size: 50px;
 }
 
 #background-img{
@@ -22,18 +21,18 @@ body{
   z-index: -1;
 }
 h1{
-   margin-top:60px;
-   margin-bottom: 60px;
+   margin-top:20px;
+   margin-bottom: 20px;
    font-family: 'Indie Flower', cursive;
-   font-size: 72px;
+   font-size: 32px;
 }
 
 #board {
   
   margin: auto;
-  width: 80%;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  width: 74%;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-width: 6px;
   border-radius: 10px;
   border-style: double;
@@ -45,23 +44,23 @@ h1{
 .player-number-btn,.sign-btn,.difficulty-btn{
   color:#3b80ef;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 .sign-btn{
   display: inline-block;
   font-family: 'Indie Flower', cursive;
-  font-size: 72px;
+  font-size: 32px;
 }
 .player-number-btn:hover,.sign-btn:hover,.difficulty-btn:hover{
-  text-shadow: 2px 2px 0px;
+  text-shadow: 1px 1px 0px;
 }
 
 
 #playing-field {
   position: relative;
-  margin: 80px auto; 
+  margin: 20px auto; 
   width: 60%;
   padding:0;
-
 }
 .row{
   display: flex;
@@ -70,12 +69,12 @@ h1{
 
 .play-btn {
   flex: 1 0 30%;
-  height: 140px;
-  padding-top: 10%;
-  border: 4px solid rgba(128,128,128,1.0);
+  height: 50px;
+  border: 1px solid rgba(128,128,128,1.0);
   font-family: 'Indie Flower', cursive;
-  font-size: 72px;
+  font-size: 32px;
   color: grey;
+  cursor: pointer;
 }
 .play-btn:hover{
   background: rgba(221, 210, 189, 0.6);
@@ -106,20 +105,20 @@ h1{
   margin-bottom: 0px;
 }
 #reset-all:hover{
-  text-shadow: 3px 0 0;
+  text-shadow: 1px 0 0;
 }
 #result{
   position:absolute;
   box-sizing: border-box;
   top:0;
   left:0;
-  padding-top: 40%;;
+  padding-top: 22%;;
   background-image: url('blank-page.jpg');
   opacity: 0.7;
   height:100%;
   width:100%;
   color:black;
-  font-size: 84px;
+  font-size: 32px;
   font-weight: bold;
 }
 #turn1,#turn2{
@@ -127,15 +126,57 @@ h1{
   background-image: url('blank-page.jpg');
   writing-mode: vertical-rl;
   text-orientation:upright;
-  width: 70px;
+  width: 20px;
   padding: 0px;
   text-align: center;
+  font-size: 13px;
 }
 #turn1{
-  top: 0px;
-  margin-left: -220px;
+  top: 8px !important;
+  margin: 0;
+  height: 100%;
+  left: -40px !important;
 }
 #turn2{
-  top: 0px;
-  right: -120px;
+  top: 8px !important;
+  right: -40px;
+}
+
+
+@media only screen and (min-width:768px){
+  #page{
+    font-size: 24px;
+  }
+  h1{
+    font-size: 48px;
+  }
+  #board{
+    width: 400px;
+  }
+  #playing-field {
+    margin: 50px auto; 
+  }
+  .play-btn,.sign-btn{
+    height: 88px;
+    font-size: 48px;
+    padding-top: 0;
+  }
+  #turn1,#turn2{
+    font-size: 22px;
+    width: 32px;
+  }
+  #turn1{
+    top: 0px;
+    margin: 0;
+    left: -68px !important;
+  }
+  #turn2{
+    top: 0px;
+    margin:0;
+    right: -68px;
+  }
+  #result{
+    font-size: 42px;
+    padding-top: 28%;
+  }
 }
