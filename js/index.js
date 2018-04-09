@@ -8,31 +8,6 @@ console.log("JS file is working");
   console.log("document is ready");
 });*/
 
-// $(document).ready(function(){
-//   if ($(window).width() < 320) {
-//     $("body").css("background-size", "auto");
-//   }else{$("body").css("background-size", "cover");}
-// });
-
-// $(window).resize(function() {
-
-//   if ($(window).width() < 480) {
-//     $("body").css("background-size", "auto");
-//   }else{$("body").css("background-size", "cover");}
-
-//   var turn1 = document.getElementById('turn1');
-//   turn1.style.position = "absolute";
-//   turn1.style.top = $("#btn1").position().top + 20 + 'px';
-//   if (player1Name === "You") {
-//     turn1.style.top = $("#btn4").position().top + 'px';
-//   }
-//   turn1.style.left = $("#playing-field").position().left + 'px';
-
-//   var turn2 = document.getElementById('turn2');
-//   turn2.style.position = "absolute";
-//   turn2.style.top = $("#btn3").position().top + 'px';
-//   turn2.style.left = $("#btn3").position().left + 80 + 'px';
-// });
 
 var playerNum, sign1, sign2, player1, player2, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, step;
 var btn1Player, btn2Player, btn3Player, btn4Player, btn5Player, btn6Player, btn7Player, btn8Player, btn9Player;
@@ -582,10 +557,6 @@ function btnClickF(btnnumber) {
       console.log("step", step, "player1:", player1, sign1, player2Name, ":", player2, sign2);
       $("#btn" + btnnumber.toString()).html(sign1);
 
-      var turn2 = document.getElementById('turn2');
-      turn2.style.position = "absolute";
-      turn2.style.top = $("#btn3").position().top + 'px';
-      turn2.style.left = $("#btn3").position().left + 80 + 'px';
       $("#turn1").attr("hidden", "hidden");
       $("#turn2").removeAttr("hidden");
 
@@ -613,13 +584,6 @@ function btnClickF(btnnumber) {
       //console.log("step", step, "player1:", player1, sign1, player2Name, ":", player2, sign2);
       $("#btn" + btnnumber.toString()).html(sign2);
 
-      var turn1 = document.getElementById('turn1');
-      turn1.style.position = "absolute";
-      turn1.style.top = $("#btn1").position().top + 'px';
-      if (player1Name === "You") {
-        turn1.style.top = $("#btn4").position().top + 'px';
-      }
-      turn1.style.left = $("#playing-field").position().left + 'px';
       $("#turn2").attr("hidden", "hidden");
       $("#turn1").removeAttr("hidden");
 
